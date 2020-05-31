@@ -15,10 +15,13 @@ namespace MediaLibrary
             Console.WriteLine(album3.GetDisplayText());
 
             album1.Loan("Jessie James");
+            album2.Loan();
             Console.WriteLine(album1.GetDisplayText());
+            Console.WriteLine(album2.GetDisplayText());
             album1.Return();
+            album2.Return();
             Console.WriteLine(album1.GetDisplayText());
-
+            Console.WriteLine(album2.GetDisplayText());
         }
     }
 

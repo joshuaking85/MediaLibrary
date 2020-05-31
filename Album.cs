@@ -20,17 +20,24 @@ namespace MediaLibrary
             string text = "Album: " + Title + ", by: " + Artist;
             if(OnLoan)
             {
-                text += " (Currently onloan to " + Loanee +")";
+                if(!string.IsNullOrEmpty(Loanee)){
+                    text += " (Currently on loan to " + Loanee +")";
+                }else{
+                    text += "(Currently on loan)";
+                }
+                
             }
 
             return text;
         }
-
+        public void Loan()
+        {
+            OnLoan = true;
+        }
         public void Loan(string loanee)
         {
             Loanee = loanee;
-            OnLoan = true;
-
+            Loan();
         }
         public void Return()
         {
