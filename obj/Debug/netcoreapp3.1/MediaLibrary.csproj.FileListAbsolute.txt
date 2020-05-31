@@ -1,0 +1,13 @@
+C:\Users\joshu\CodeLouisville\MediaLibrary\obj\Debug\netcoreapp3.1\MediaLibrary.csprojAssemblyReference.cache
+C:\Users\joshu\CodeLouisville\MediaLibrary\obj\Debug\netcoreapp3.1\MediaLibrary.csproj.CoreCompileInputs.cache
+C:\Users\joshu\CodeLouisville\MediaLibrary\obj\Debug\netcoreapp3.1\MediaLibrary.AssemblyInfoInputs.cache
+C:\Users\joshu\CodeLouisville\MediaLibrary\obj\Debug\netcoreapp3.1\MediaLibrary.AssemblyInfo.cs
+C:\Users\joshu\CodeLouisville\MediaLibrary\bin\Debug\netcoreapp3.1\MediaLibrary.exe
+C:\Users\joshu\CodeLouisville\MediaLibrary\bin\Debug\netcoreapp3.1\MediaLibrary.deps.json
+C:\Users\joshu\CodeLouisville\MediaLibrary\bin\Debug\netcoreapp3.1\MediaLibrary.runtimeconfig.json
+C:\Users\joshu\CodeLouisville\MediaLibrary\bin\Debug\netcoreapp3.1\MediaLibrary.runtimeconfig.dev.json
+C:\Users\joshu\CodeLouisville\MediaLibrary\bin\Debug\netcoreapp3.1\MediaLibrary.dll
+C:\Users\joshu\CodeLouisville\MediaLibrary\bin\Debug\netcoreapp3.1\MediaLibrary.pdb
+C:\Users\joshu\CodeLouisville\MediaLibrary\obj\Debug\netcoreapp3.1\MediaLibrary.dll
+C:\Users\joshu\CodeLouisville\MediaLibrary\obj\Debug\netcoreapp3.1\MediaLibrary.pdb
+C:\Users\joshu\CodeLouisville\MediaLibrary\obj\Debug\netcoreapp3.1\MediaLibrary.genruntimeconfig.cache
