@@ -17,22 +17,20 @@ namespace MediaLibrary
                     new Movie("Deadpool", "Tim Miller")
                 });
 
-                Console.WriteLine("Number of Items " + mediaLibrary.NumberOfItems);                
+                var item = mediaLibrary.FindItem("Arabia");
+
+                if (item != null)
+                {
+                    MediaLibrary.DisplayItem(item);
+                }
+                else
+                {
+                    Console.WriteLine("Item Not Found!");
+                }
+
+                /* Console.WriteLine("Number of Items " + mediaLibrary.NumberOfItems);                
                 
-                mediaLibrary.DisplayItems();
-
-                /* DetectMediaType(mediaLibrary.GetItemAt(0));
-                DetectMediaType(mediaLibrary.GetItemAt(1));
-                DetectMediaType(mediaLibrary.GetItemAt(2));
-                DetectMediaType(mediaLibrary.GetItemAt(3));
-                DetectMediaType(mediaLibrary.GetItemAt(4));
-                DetectMediaType(mediaLibrary.GetItemAt(5)); */
-
-                /* Display(mediaLibrary.GetItemAt(0));
-                Display(mediaLibrary.GetItemAt(1));
-                Display(mediaLibrary.GetItemAt(2));
-                Display(mediaLibrary.GetItemAt(3));
-                Display(mediaLibrary.GetItemAt(4)); */
+                mediaLibrary.DisplayItems(); */
             }
             catch (Exception ex)
             {

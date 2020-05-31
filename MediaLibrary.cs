@@ -31,6 +31,20 @@ namespace MediaLibrary
                DisplayItem(_items[i]);
             }
         }
+
+        public MediaType FindItem(string criteria)
+        {
+            MediaType itemToReturn = null;
+            foreach(var item in _items)
+            {
+                if(item.Title.ToLower().Contains(criteria.ToLower()))
+                {
+                    itemToReturn = item;
+                    break;
+                }
+            }
+            return itemToReturn;
+        }
         public static void DisplayItem(MediaType item)
         {
             if (item == null)
