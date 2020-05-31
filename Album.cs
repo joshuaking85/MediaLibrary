@@ -4,7 +4,7 @@ namespace MediaLibrary
 {
     class Album : MediaType
     {
-        public readonly string Artist;
+        public string Artist { get; private set; }
 
         public Album(string title, string artist)
          : base(title)

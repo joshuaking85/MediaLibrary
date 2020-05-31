@@ -4,9 +4,15 @@ namespace MediaLibrary
 {
     class MediaType
     {
-        public string Title;
-        public string Loanee = null;
-        public bool OnLoan = false;
+
+        /* private readonly string _title;
+        public string Title
+        {
+            get { return _title; }
+        } */
+        public string Title { get; private set; } 
+        public string Loanee { get; private set; } = "";
+        public bool OnLoan { get; private set; } = false;
 
         public MediaType(string title)
         {

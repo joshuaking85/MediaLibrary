@@ -4,7 +4,7 @@ namespace MediaLibrary
 {
     class Book : MediaType
     {
-        public readonly string Author;
+        public string Author { get; private set; }
 
         public Book(string title, string author)
          : base(title)

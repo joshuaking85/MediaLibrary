@@ -4,7 +4,7 @@ namespace MediaLibrary
 {
     class Movie : MediaType
     {
-        public readonly string Director;
+        public string Director { get; private set;}
 
         public Movie(string title, string director)
          : base(title)
