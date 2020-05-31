@@ -23,5 +23,36 @@ namespace MediaLibrary
                 return null;
             }
         }
+
+        public void DisplayItems()
+        {
+            for(int i=0; i < _items.Length; i++)
+            {
+               DisplayItem(_items[i]);
+            }
+        }
+        public static void DisplayItem(MediaType item)
+        {
+            if (item == null)
+            {
+                return;
+            }
+            if (item is Album)
+            {
+                Console.WriteLine(((Album)item).DisplayText);
+            }
+            else if (item is Book)
+            {
+                Console.WriteLine(((Book)item).DisplayText);
+            }
+            else if (item is Movie)
+            {
+                Console.WriteLine(((Movie)item).DisplayText);
+            }
+            else
+            {
+                throw new Exception("Unexpected Media Subtype Encountered");
+            }
+        }
     }
 }

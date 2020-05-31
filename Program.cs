@@ -18,48 +18,28 @@ namespace MediaLibrary
                 });
 
                 Console.WriteLine("Number of Items " + mediaLibrary.NumberOfItems);                
+                
+                mediaLibrary.DisplayItems();
 
-                DetectMediaType(mediaLibrary.GetItemAt(0));
+                /* DetectMediaType(mediaLibrary.GetItemAt(0));
                 DetectMediaType(mediaLibrary.GetItemAt(1));
                 DetectMediaType(mediaLibrary.GetItemAt(2));
                 DetectMediaType(mediaLibrary.GetItemAt(3));
                 DetectMediaType(mediaLibrary.GetItemAt(4));
-                DetectMediaType(mediaLibrary.GetItemAt(5));
+                DetectMediaType(mediaLibrary.GetItemAt(5)); */
 
-                Display(mediaLibrary.GetItemAt(0));
+                /* Display(mediaLibrary.GetItemAt(0));
                 Display(mediaLibrary.GetItemAt(1));
                 Display(mediaLibrary.GetItemAt(2));
                 Display(mediaLibrary.GetItemAt(3));
-                Display(mediaLibrary.GetItemAt(4));
+                Display(mediaLibrary.GetItemAt(4)); */
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception : " + ex.Message);
             }
         }
-        static void Display(MediaType item)
-        {
-            if (item == null)
-            {
-                return;
-            }
-            if (item is Album)
-            {
-                Console.WriteLine(((Album)item).DisplayText);
-            }
-            else if (item is Book)
-            {
-                Console.WriteLine(((Book)item).DisplayText);
-            }
-            else if (item is Movie)
-            {
-                Console.WriteLine(((Movie)item).DisplayText);
-            }
-            else
-            {
-                throw new Exception("Unexpected Media Subtype Encountered");
-            }
-        }
+        
         static void DetectMediaType(MediaType item)
         {
             if (item == null)
