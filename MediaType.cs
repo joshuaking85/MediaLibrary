@@ -4,15 +4,29 @@ namespace MediaLibrary
 {
     class MediaType
     {
-
-        /* private readonly string _title;
-        public string Title
-        {
-            get { return _title; }
-        } */
         public string Title { get; private set; } 
         public string Loanee { get; private set; } = "";
         public bool OnLoan { get; private set; } = false;
+        public string OnLoanDisplayText { 
+            get
+            {
+                if (OnLoan)
+                {
+                    if (!string.IsNullOrEmpty(Loanee))
+                    {
+                        return " (Currently on loan to " + Loanee + ")";
+                    }
+                    else
+                    {
+                        return "(Currently on loan)";
+                    } 
+                }
+                else
+                {
+                    return "";
+                }
+            }
+        }
 
         public MediaType(string title)
         {

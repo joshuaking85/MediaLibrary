@@ -5,7 +5,7 @@ namespace MediaLibrary
     class MediaLibrary
     {
         private MediaType[] _items;
-
+        public int NumberOfItems => _items.Length;
         public MediaLibrary(MediaType[] items)
         {
             _items = items;

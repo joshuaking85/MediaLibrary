@@ -15,7 +15,9 @@ namespace MediaLibrary
                     new Album("Bohemian Rhapsody", "Queen"),
                     new Book("Harry Potter", "J.K. Rowling"),
                     new Movie("Deadpool", "Tim Miller")
-                });                
+                });
+
+                Console.WriteLine("Number of Items " + mediaLibrary.NumberOfItems);                
 
                 DetectMediaType(mediaLibrary.GetItemAt(0));
                 DetectMediaType(mediaLibrary.GetItemAt(1));
@@ -24,39 +26,11 @@ namespace MediaLibrary
                 DetectMediaType(mediaLibrary.GetItemAt(4));
                 DetectMediaType(mediaLibrary.GetItemAt(5));
 
-
                 Display(mediaLibrary.GetItemAt(0));
                 Display(mediaLibrary.GetItemAt(1));
                 Display(mediaLibrary.GetItemAt(2));
                 Display(mediaLibrary.GetItemAt(3));
                 Display(mediaLibrary.GetItemAt(4));
-
-                /* Console.WriteLine(album1.GetDisplayText());
-                Console.WriteLine(album2.GetDisplayText());
-                Console.WriteLine(album3.GetDisplayText());
-                Console.WriteLine(book.GetDisplayText());
-
-                Console.WriteLine(movie.GetDisplayText());
-
-
-                album1.Loan("Jessie James");
-                album2.Loan();
-                book.Loan();
-                movie.Loan();
-                Console.WriteLine(album1.GetDisplayText());
-                Console.WriteLine(album2.GetDisplayText());
-                Console.WriteLine(album3.GetDisplayText());
-                Console.WriteLine(book.GetDisplayText());
-                Console.WriteLine(movie.GetDisplayText());
-                album1.Return();
-                album2.Return();
-                book.Return();
-                movie.Return();
-                Console.WriteLine(album1.GetDisplayText());
-                Console.WriteLine(album2.GetDisplayText());
-                Console.WriteLine(album3.GetDisplayText());
-                Console.WriteLine(book.GetDisplayText());
-                Console.WriteLine(movie.GetDisplayText()); */
             }
             catch (Exception ex)
             {
@@ -71,15 +45,15 @@ namespace MediaLibrary
             }
             if (item is Album)
             {
-                Console.WriteLine(((Album)item).GetDisplayText());
+                Console.WriteLine(((Album)item).DisplayText);
             }
             else if (item is Book)
             {
-                Console.WriteLine(((Book)item).GetDisplayText());
+                Console.WriteLine(((Book)item).DisplayText);
             }
             else if (item is Movie)
             {
-                Console.WriteLine(((Movie)item).GetDisplayText());
+                Console.WriteLine(((Movie)item).DisplayText);
             }
             else
             {
@@ -99,7 +73,6 @@ namespace MediaLibrary
             else if (item is Book)
             {
                 Console.WriteLine(item.Title + " Is a Book");
-
             }
             else if (item is Movie)
             {
