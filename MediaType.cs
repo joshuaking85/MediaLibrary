@@ -10,6 +10,10 @@ namespace MediaLibrary
 
         public MediaType(string title)
         {
+            if (string.IsNullOrEmpty(title))
+            {
+                throw new Exception("A Media Type Must Have a Title");
+            }
             Title = title;
         }
         public void Loan()
