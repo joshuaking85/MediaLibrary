@@ -4,15 +4,21 @@ namespace MediaLibrary
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            var album = new Album("Hybrid Theory", "Linkin Park");
-            var book = new Book("Harry Potter", "J.K. Rowling");
-            var movie = new Movie("Deadpool", "Tim Miller");
+            var album1 = new Album("Hybrid Theory", "Linkin Park");
+            var album2 = new Album("The Wall", "Pink Floyd");
+            var album3 = new Album("Bohemian Rhapsody", "Queen");
 
-            Console.WriteLine("Album: " + album.Title + ", by: " + album.Artist);
-            Console.WriteLine("Album: " + book.Title + ", by: " + book.Author);
-            Console.WriteLine("Album: " + movie.Title + ", by: " + movie.Director);
+            Console.WriteLine(album1.GetDisplayText());
+            Console.WriteLine(album2.GetDisplayText());
+            Console.WriteLine(album3.GetDisplayText());
+
+            album1.Loan("Jessie James");
+            Console.WriteLine(album1.GetDisplayText());
+            album1.Return();
+            Console.WriteLine(album1.GetDisplayText());
+
         }
     }
 
